@@ -1,5 +1,4 @@
 import React from 'react';
-import { Books } from '../../../public/Book';
 import BookCard from './BookCard';
 import { bookData } from './connectDb';
 

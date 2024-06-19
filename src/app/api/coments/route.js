@@ -22,8 +22,5 @@ export const GET = async (request)=>{
   
  
   return Response.json(res)
-
- 
- 
 }
 

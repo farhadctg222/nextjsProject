@@ -67,4 +67,12 @@ export const team = async ()=>{
  
 
 }
+export const service = async ()=>{
+  const serviceData = await fetch('http://localhost:3000/api/service')
+ 
+  const serviceResp = await serviceData.json()
+  return serviceResp
+ 
+
+}
 

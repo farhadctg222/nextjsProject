@@ -1,5 +1,4 @@
 import React from 'react';
-import { Philosophy } from '../../../public/Philosophy';
 import PhilosopyCard from './PhilosopyCard';
 import { respone } from './connectDb';
 
