@@ -1,4 +1,5 @@
 import { connectDb } from "@/app/ui/connectDb"
+import { NextResponse } from "next/server"
 
 export const GET = async (request)=>{
  
@@ -9,6 +10,6 @@ export const GET = async (request)=>{
     
     
    
-    return Response.json(res)
+    return NextResponse.json(res)
   }
   

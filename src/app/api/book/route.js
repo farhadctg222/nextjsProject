@@ -1,4 +1,5 @@
 import { connectDb } from "@/app/ui/connectDb"
+import { NextResponse } from "next/server"
 
 export const GET = async (request)=>{
  
@@ -9,5 +10,5 @@ export const GET = async (request)=>{
     const bookcollection = await dabase.collection('book')
     const res1 = await bookcollection.find({}).toArray()
    
-    return Response.json(res1)
+    return NextResponse.json(res1)
 }

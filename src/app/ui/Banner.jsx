@@ -15,7 +15,7 @@ const Banner = () => {
             <p className='flex mb-2 justify-center text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, veniam.</p>
             <button className='btn btn-primary'>Join Us</button>
           </div>
-          <img src={im1} className="w-full" />
+          <Image src={im1} width={100} height={100}alt='image' className="w-full"></Image>
           
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
             <a href="#slide3" className="btn ">❮</a> 
@@ -28,7 +28,7 @@ const Banner = () => {
             <p className='flex mb-2 justify-center text-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, veniam.</p>
             <button className='btn btn-primary'>Join Us</button>
           </div>
-          <Image src={im2} className="w-full"></Image>
+          <Image src={im2} width={100} height={100} alt='image' className="w-full"></Image>
           <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5  bottom-0">
             <a href="#slide3" className="btn ">❮</a> 
             <a href="#slide1" className="btn ">❯</a>
@@ -40,7 +40,7 @@ const Banner = () => {
             <p className='flex mb-2 justify-center text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, veniam.</p>
             <button className='btn btn-primary'>Join Us</button>
           </div>
-        <Image src={im2} className="w-full"></Image>
+        <Image src={im2} width={100} height={100} alt='image' className="w-full"></Image>
                   <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5  bottom-0">
             <a href="#slide3" className="btn">❮</a> 
             <a href="#slide1" className="btn ">❯</a>
