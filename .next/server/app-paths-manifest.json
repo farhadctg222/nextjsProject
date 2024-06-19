@@ -5,8 +5,8 @@
   "/service/page": "app/service/page.js",
   "/signup/page": "app/signup/page.js",
   "/api/team/route": "app/api/team/route.js",
+  "/api/coments/route": "app/api/coments/route.js",
   "/api/service/route": "app/api/service/route.js",
   "/api/book/route": "app/api/book/route.js",
-  "/data/route": "app/data/route.js",
-  "/api/coments/route": "app/api/coments/route.js"
+  "/data/route": "app/data/route.js"
 }

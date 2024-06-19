@@ -46,7 +46,7 @@ export const connectDb = async ()=>{
 
 export const respone = async ()=>{
   const data1 = await fetch('http://localhost:3000/api/coments',{
-    cache: 'force-cache'
+    cache: 'no-store'
   })
   const res = await data1.json()
   return res
@@ -55,7 +55,7 @@ export const respone = async ()=>{
 }
 export const bookData = async ()=>{
   const bookfetch = await fetch('http://localhost:3000/api/book',{
-    cache: 'force-cache'
+    cache:  'no-store'
   })
  
   const bookres = await bookfetch.json()
@@ -65,7 +65,7 @@ export const bookData = async ()=>{
 }
 export const team = async ()=>{
   const bookfetch = await fetch('http://localhost:3000/api/team',{
-    cache: 'force-cache'
+    cache: 'no-store'
   })
  
   const bookres = await bookfetch.json()
@@ -75,7 +75,7 @@ export const team = async ()=>{
 }
 export const service = async ()=>{
   const serviceData = await fetch('http://localhost:3000/api/service',{
-    cache: 'force-cache'
+    cache: 'no-store'
   })
  
   const serviceResp = await serviceData.json()
