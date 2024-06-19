@@ -1,5 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavBar from "./ui/NavBar";
+import Foter from "./ui/Foter";
+import AuthProvider from "./ui/AuthProvider";
+import { Suspense } from "react";
+import Loading from "./ui/Loading";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +18,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Suspense fallback={<Loading></Loading>}>
+      <body className={inter.className}>
+      <AuthProvider>
+       <NavBar></NavBar>
+      
+        {children}
+        <Foter></Foter>
+        </AuthProvider>
+        </body>
+        </Suspense>
     </html>
   );
 }
