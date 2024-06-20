@@ -45,7 +45,7 @@ export const connectDb = async ()=>{
 }
 
 export const respone = async ()=>{
-  const data1 = await fetch('http://localhost:3000/api/coments',{
+  const data1 = await fetch('https://nextjs-project-mohammad-farhads-projects-b62c2122.vercel.app/api/coments',{
     cache: 'no-store'
   })
   const res = await data1.json()
@@ -54,7 +54,7 @@ export const respone = async ()=>{
 
 }
 export const bookData = async ()=>{
-  const bookfetch = await fetch('http://localhost:3000/api/book',{
+  const bookfetch = await fetch('https://nextjs-project-mohammad-farhads-projects-b62c2122.vercel.app/api/book',{
     cache:  'no-store'
   })
  
@@ -64,7 +64,7 @@ export const bookData = async ()=>{
 
 }
 export const team = async ()=>{
-  const bookfetch = await fetch('http://localhost:3000/api/team',{
+  const bookfetch = await fetch('https://nextjs-project-mohammad-farhads-projects-b62c2122.vercel.app/api/team',{
     cache: 'no-store'
   })
  
@@ -74,7 +74,7 @@ export const team = async ()=>{
 
 }
 export const service = async ()=>{
-  const serviceData = await fetch('http://localhost:3000/api/service',{
+  const serviceData = await fetch('https://nextjs-project-mohammad-farhads-projects-b62c2122.vercel.app/api/service',{
     cache: 'no-store'
   })
  

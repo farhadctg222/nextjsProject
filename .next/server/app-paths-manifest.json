@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
   "/service/page": "app/service/page.js",
-  "/api/team/route": "app/api/team/route.js",
-  "/data/route": "app/data/route.js",
-  "/api/service/route": "app/api/service/route.js",
   "/signup/page": "app/signup/page.js",
   "/api/book/route": "app/api/book/route.js",
-  "/api/coments/route": "app/api/coments/route.js"
+  "/api/coments/route": "app/api/coments/route.js",
+  "/api/service/route": "app/api/service/route.js",
+  "/api/team/route": "app/api/team/route.js",
+  "/data/route": "app/data/route.js"
 }
