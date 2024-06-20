@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import PhilosopyCard from './PhilosopyCard';
 import { respone } from './connectDb';
 
@@ -18,9 +18,11 @@ const Philosopy = async () => {
         </div>
         <div className='mt-[-20px]   lg:flex  gap-4 md:flex md:flex-wrap lg:flex-wrap justify-center lg:flex-row md:flex-row flex-col">
       '>
+        <Suspense fallback={<p> Loading......</p>}>
             {
              data.map(data=> <PhilosopyCard key={data.id} philosopy={data}></PhilosopyCard>)
              }
+             </Suspense>
         </div>
 
         

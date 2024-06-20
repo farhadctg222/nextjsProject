@@ -18,16 +18,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Suspense fallback={<Loading></Loading>}>
+      
       <body className={inter.className}>
       <AuthProvider>
        <NavBar></NavBar>
+       <Suspense fallback={<Loading></Loading>}>
       
         {children}
+        </Suspense>
+        
         <Foter></Foter>
         </AuthProvider>
         </body>
-        </Suspense>
+       
     </html>
   );
 }
